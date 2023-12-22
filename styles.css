@@ -1,0 +1,78 @@
+/* Base styles (extra small devices- mobile) */
+/* CSS RULES */
+
+.Blog-Cards-Wrapper {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.Blog-Card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Blog-Card-Image>img {
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+}
+
+.Blog-Card-Body {
+    padding: 4px;
+}
+
+.Blog-Card-Info {
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+.Blog-Card-Title {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.Blog-Card:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------  Small devices (tablets) ------------------*/
+    /* CSS RULES */
+    @media screen and (min-width:576px) {
+    .Blog-Cards-Wrapper {
+        flex-direction:row;
+        flex-wrap: wrap;
+        max-width: 720px;
+    }
+
+    .Blog-Card{
+        width: calc((100% - 10px - 4px)/2);
+    }
+}
+/*--------------- Medium devices (laptops) ------------------*/
+@media screen and (min-width:768px) {
+    /* CSS rules */
+
+}
+
+/*---------------- Large devices (desktops) -------------------*/
+@media screen and (min-width:992px) {
+    /* CSS rules */
+    .Blog-Cards-Wrapper{
+        max-width: 1080px;
+    }
+    .Blog-Card{
+        width: calc((100% - 20px - 6px)/3);
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width:1200x) {
+    /* CSS rules */
+}
